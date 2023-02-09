@@ -7,7 +7,6 @@ public class CarRental {
 
 	private LocalDateTime start;
 	private LocalDateTime  finish;
-	
 	private Invoice invoice;
 	private Vehiche vehiche;
 	

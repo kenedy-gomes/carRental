@@ -35,7 +35,7 @@ public class program {
 		double pricePerDays = sc.nextDouble();
 		
 		
-		RentalService rentalService = new RentalService(pricePerDays, pricePerDays, new BrazilTaxService());
+		RentalService rentalService = new RentalService(pricePerHour, pricePerDays, new BrazilTaxService());
 		
 		rentalService.processInvoice(carrental);
 		
@@ -44,8 +44,7 @@ public class program {
 		System.out.println("Pagamento Básico: " + carrental.getInvoice().getBasicPayment());
 		System.out.println("Imposto: " + carrental.getInvoice().getTax());
 		System.out.println("Pagamento total: " + carrental.getInvoice().totalPayment());
-		
-		
+	
 	}
 
 }
